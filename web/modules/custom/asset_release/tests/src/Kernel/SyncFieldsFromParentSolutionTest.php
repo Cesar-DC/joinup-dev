@@ -10,7 +10,7 @@ use Drupal\rdf_entity\Entity\Rdf;
 use Drupal\rdf_entity\Entity\RdfEntityMapping;
 use Drupal\rdf_entity\Entity\RdfEntityType;
 use Drupal\taxonomy\Entity\Term;
-use Drupal\Tests\rdf_entity\Traits\RdfDatabaseConnectionTrait;
+use Drupal\Tests\sparql_entity_storage\Traits\SparqlConnectionTrait;
 
 /**
  * Tests field synchronization between solution and release.
@@ -19,7 +19,7 @@ use Drupal\Tests\rdf_entity\Traits\RdfDatabaseConnectionTrait;
  */
 class SyncFieldsFromParentSolutionTest extends KernelTestBase {
 
-  use RdfDatabaseConnectionTrait;
+  use SparqlConnectionTrait;
 
   /**
    * {@inheritdoc}
@@ -56,6 +56,7 @@ class SyncFieldsFromParentSolutionTest extends KernelTestBase {
     'search_api_field',
     'smart_trim',
     'solution',
+    'sparql_entity_storage',
     'state_machine',
     'system',
     'taxonomy',
@@ -83,6 +84,7 @@ class SyncFieldsFromParentSolutionTest extends KernelTestBase {
       'contact_information',
       'owner',
       'asset_release',
+      'sparql_entity_storage',
     ]);
 
     RdfEntityType::create(['rid' => 'collection'])->save();

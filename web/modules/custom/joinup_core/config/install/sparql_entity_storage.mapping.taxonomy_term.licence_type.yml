@@ -2,14 +2,14 @@ langcode: en
 status: true
 dependencies:
   config:
-    - rdf_entity.graph.default
-    - taxonomy.vocabulary.themes
-id: taxonomy_term.themes
+    - sparql_entity_storage.graph.default
+    - taxonomy.vocabulary.licence_type
+id: taxonomy_term.licence_type
 entity_type_id: taxonomy_term
-bundle: themes
-rdf_type: 'http://publications.europa.eu/resource/authority/data-theme'
+bundle: licence_type
+rdf_type: 'http://purl.org/adms/licencetype/1.1'
 graph:
-  default: 'http://data-theme-skos'
+  default: 'http://adms-sw-v1.00'
 base_fields_mapping:
   uuid:
     value:

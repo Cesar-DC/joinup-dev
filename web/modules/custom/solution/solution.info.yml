@@ -107,5 +107,5 @@ config_devel:
   - og.og_role.rdf_entity-solution-facilitator
   - og.og_role.rdf_entity-solution-member
   - og.og_role.rdf_entity-solution-non-member
-  - rdf_entity.mapping.rdf_entity.solution
+  - sparql_entity_storage.mapping.rdf_entity.solution
   - rdf_entity.rdfentity.solution

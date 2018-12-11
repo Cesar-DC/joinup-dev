@@ -22,7 +22,7 @@ use Drupal\og\OgGroupAudienceHelperInterface;
 use Drupal\og\OgMembershipInterface;
 use Drupal\og\OgRoleInterface;
 use Drupal\og_menu\Tests\Traits\OgMenuTrait;
-use Drupal\rdf_entity\UriEncoder;
+use Drupal\sparql_entity_storage\UriEncoder;
 use Drupal\user\Entity\User;
 use PHPUnit\Framework\Assert;
 

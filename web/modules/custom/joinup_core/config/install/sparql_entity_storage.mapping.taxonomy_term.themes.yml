@@ -2,14 +2,14 @@ langcode: en
 status: true
 dependencies:
   config:
-    - rdf_entity.graph.default
-    - taxonomy.vocabulary.eira
-id: taxonomy_term.eira
+    - sparql_entity_storage.graph.default
+    - taxonomy.vocabulary.themes
+id: taxonomy_term.themes
 entity_type_id: taxonomy_term
-bundle: eira
-rdf_type: 'http://data.europa.eu/eira'
+bundle: themes
+rdf_type: 'http://publications.europa.eu/resource/authority/data-theme'
 graph:
-  default: 'http://eira_skos'
+  default: 'http://data-theme-skos'
 base_fields_mapping:
   uuid:
     value:

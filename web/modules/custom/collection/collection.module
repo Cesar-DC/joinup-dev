@@ -25,7 +25,7 @@ use Drupal\og\Og;
 use Drupal\og\OgMembershipInterface;
 use Drupal\og\OgRoleInterface;
 use Drupal\rdf_entity\Entity\RdfEntityType;
-use Drupal\rdf_entity\RdfEntityGraphInterface;
+use Drupal\sparql_entity_storage\SparqlGraphInterface;
 use Drupal\rdf_entity\RdfInterface;
 use Drupal\search_api\Query\QueryInterface;
 use Solarium\QueryType\Select\Query\Query;
@@ -249,7 +249,7 @@ function collection_rdf_entity_presave(RdfInterface $entity) {
     'deletion_request',
     'archived',
   ])) {
-    $entity->set('graph', RdfEntityGraphInterface::DEFAULT);
+    $entity->set('graph', SparqlGraphInterface::DEFAULT);
   }
   elseif (empty($state)) {
     throw new \Exception("State field not found while trying to get the appropriate graph.");
@@ -444,7 +444,7 @@ function collection_solution_count(RdfInterface $entity) {
   }
   $results = 0;
   if ($solution_ids) {
-    /** @var \Drupal\rdf_entity\Entity\Query\Sparql\Query $solution_count */
+    /** @var \Drupal\sparql_entity_storage\Entity\Query\Sparql\Query $solution_count */
     $solution_count = \Drupal::entityQuery('rdf_entity');
     // @todo Chain the query methods.
     // @see https://github.com/ec-europa/rdf_entity/issues/26

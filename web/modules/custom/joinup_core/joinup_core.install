@@ -7,7 +7,7 @@
 
 use Drupal\Core\Database\Database;
 use Drupal\Core\Site\Settings;
-use Drupal\rdf_entity\Entity\RdfEntityMapping;
+use Drupal\sparql_entity_storage\Entity\SparqlMapping;
 use Drupal\user\Entity\User;
 
 /**
@@ -76,7 +76,7 @@ function joinup_core_update_8101() {
  */
 function joinup_core_update_8102() {
   /** @var \Drupal\Core\Database\Connection $connection */
-  $connection = \Drupal::service('sparql_endpoint');
+  $connection = \Drupal::service('sparql.endpoint');
   $query = <<<QUERY
 DELETE { GRAPH ?g { ?subject <http://purl.org/dc/terms/type> ?object } }
 INSERT { GRAPH ?g { ?subject <http://joinup.eu/test_resource_type> ?object } }
@@ -110,7 +110,7 @@ QUERY;
  */
 function joinup_core_update_8103() {
   /** @var \Drupal\Core\Database\Connection $connection */
-  $connection = \Drupal::service('sparql_endpoint');
+  $connection = \Drupal::service('sparql.endpoint');
   $query = <<<QUERY
 DELETE { GRAPH ?g { ?subject <http://www.w3.org/ns/dcat#spatial> ?object } }
 INSERT { GRAPH ?g { ?subject <http://purl.org/dc/terms/spatial> ?object } }
@@ -132,7 +132,7 @@ QUERY;
  */
 function joinup_core_update_8104() {
   /** @var \Drupal\Core\Database\Connection $query */
-  $connection = \Drupal::service('sparql_endpoint');
+  $connection = \Drupal::service('sparql.endpoint');
   $query = <<<QUERY
 DELETE { GRAPH ?g { ?subject <http://xmlns.com/foaf/spec/#term_page> ?object } }
 INSERT { GRAPH ?g { ?subject <http://xmlns.com/foaf/0.1/page> ?object } }
@@ -154,7 +154,7 @@ QUERY;
  */
 function joinup_core_update_8105() {
   /** @var \Drupal\Core\Database\Connection $query */
-  $connection = \Drupal::service('sparql_endpoint');
+  $connection = \Drupal::service('sparql.endpoint');
   $query = <<<QUERY
 DELETE { GRAPH ?g { ?subject <https://www.w3.org/TR/vocab-adms/#adms-versionnotes> ?object } }
 INSERT { GRAPH ?g { ?subject <http://www.w3.org/ns/adms#versionNotes> ?object } }
@@ -196,13 +196,13 @@ function joinup_core_update_8106() {
 
   $bundle_predicate = 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type';
   foreach ($bundles as $bundle => $properties) {
-    $rdf_entity_mapping = RdfEntityMapping::loadByName($entity_type_id, $bundle);
+    $sparql_mapping = SparqlMapping::loadByName($entity_type_id, $bundle);
 
     // Update the mappings.
-    $rdf_entity_mapping->setRdfType($properties['new_uri'])->save();
+    $sparql_mapping->setRdfType($properties['new_uri'])->save();
 
     // Update the existing entities.
-    $graphs = $rdf_entity_mapping->getGraphs();
+    $graphs = $sparql_mapping->getGraphs();
     foreach ($graphs as $graph_uri) {
       // In SPARQL, there is no UPDATE query. For updates, one has to first
       // delete and then re insert.

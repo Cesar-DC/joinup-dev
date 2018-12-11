@@ -10,7 +10,7 @@
  */
 function joinup_licence_update_8100() {
   /** @var \Drupal\Core\Database\Connection $query */
-  $connection = \Drupal::service('sparql_endpoint');
+  $connection = \Drupal::service('sparql.endpoint');
   $query = <<<QUERY
 WITH <http://joinup.eu/licence/published>
 DELETE { ?subject <http://purl.org/dc/terms/title> ?object }

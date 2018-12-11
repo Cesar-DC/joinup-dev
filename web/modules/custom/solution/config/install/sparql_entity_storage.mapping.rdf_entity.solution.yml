@@ -2,27 +2,44 @@ langcode: en
 status: true
 dependencies:
   config:
-    - rdf_entity.graph.default
-    - rdf_entity.rdfentity.licence
+    - sparql_entity_storage.graph.default
+    - sparql_entity_storage.graph.draft
+    - rdf_entity.rdfentity.solution
 third_party_settings:
   rdf_schema_field_validation:
     graph: 'http://adms-definition'
     class: 'http://www.w3.org/2000/01/rdf-schema#Class'
     property_predicates:
       - 'http://www.w3.org/2000/01/rdf-schema#domain'
-id: rdf_entity.licence
+id: rdf_entity.solution
 entity_type_id: rdf_entity
-bundle: licence
-rdf_type: 'http://purl.org/dc/terms/LicenseDocument'
+bundle: solution
+rdf_type: 'http://www.w3.org/ns/dcat#Dataset'
 base_fields_mapping:
   rid:
     target_id:
       predicate: 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type'
       format: resource
+  uid:
+    target_id:
+      predicate: 'http://joinup.eu/owner/uid'
+      format: 'xsd:integer'
   label:
     value:
-      predicate: 'http://www.w3.org/2000/01/rdf-schema#label'
+      predicate: 'http://purl.org/dc/terms/title'
       format: t_literal
+  created:
+    value:
+      predicate: 'http://purl.org/dc/terms/issued'
+      format: 'xsd:dateTime'
+  changed:
+    value:
+      predicate: 'http://purl.org/dc/terms/modified'
+      format: 'xsd:dateTime'
+  uuid:
+    value:
+      predicate: ''
+      format: ''
   langcode:
     value:
       predicate: 'http://joinup.eu/language'
@@ -56,5 +73,6 @@ base_fields_mapping:
       predicate: 'http://joinup.eu/language/translation_changed_time'
       format: t_literal
 graph:
-  default: 'http://joinup.eu/licence/published'
+  default: 'http://joinup.eu/solution/published'
+  draft: 'http://joinup.eu/solution/draft'
 entity_id_plugin: joinup_po_namespace

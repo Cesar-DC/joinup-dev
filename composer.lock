@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7def6ea058d2a052a5beb3d648c70770",
+    "content-hash": "177800484a121b60b55176f69ebd0681",
     "packages": [
         {
             "name": "SEMICeu/adms-ap_validator",
@@ -2065,7 +2065,11 @@
                 },
                 "drupal": {
                     "version": "8.x-1.1",
-                    "datestamp": "1492709942"
+                    "datestamp": "1492709942",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2802,6 +2806,10 @@
                     "name": "Daniel Wehner (dawehner)",
                     "homepage": "https://www.drupal.org/u/dawehner",
                     "role": "Maintainer"
+                },
+                {
+                    "name": "joelpittet",
+                    "homepage": "https://www.drupal.org/user/160302"
                 },
                 {
                     "name": "merlinofchaos",
@@ -4647,86 +4655,46 @@
         },
         {
             "name": "drupal/rdf_entity",
-            "version": "1.0.0-alpha12",
+            "version": "dev-split",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/rdf_entity",
-                "reference": "8.x-1.0-alpha12"
+                "url": "https://github.com/ec-europa/rdf_entity.git",
+                "reference": "e33225a9917570705c984777554c196b6975a26e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/rdf_entity-8.x-1.0-alpha12.zip",
-                "reference": "8.x-1.0-alpha12",
-                "shasum": "4b7a163e139594c74be04786d23a51ed60429c3b"
+                "url": "https://api.github.com/repos/ec-europa/rdf_entity/zipball/e33225a9917570705c984777554c196b6975a26e",
+                "reference": "e33225a9917570705c984777554c196b6975a26e",
+                "shasum": ""
             },
             "require": {
-                "drupal/core": "*",
-                "easyrdf/easyrdf": "0.10.0-alpha.1 as 0.9.2",
-                "ml/json-ld": "^1.0",
+                "drupal/sparql_entity_storage": "^1.0",
                 "php": ">=7.1"
+            },
+            "require-dev": {
+                "minimaxir/big-list-of-naughty-strings": "dev-master"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0-alpha12",
-                    "datestamp": "1544082480",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                },
                 "patches_applied": {
-                    "Allow bundle label plural variants @see https://github.com/ec-europa/rdf_entity/pull/12": "https://patch-diff.githubusercontent.com/raw/ec-europa/rdf_entity/pull/12.diff",
-                    "Ensure a predictable order of fields when serializing @see https://github.com/ec-europa/rdf_entity/pull/76": "https://patch-diff.githubusercontent.com/raw/ec-europa/rdf_entity/pull/76.diff",
-                    "Fix endless loop due to orphaned aliases @see https://github.com/ec-europa/rdf_entity/pull/78": "https://patch-diff.githubusercontent.com/raw/ec-europa/rdf_entity/pull/78.diff",
-                    "Implement batch delete of aliases @see https://github.com/ec-europa/rdf_entity/pull/71": "https://patch-diff.githubusercontent.com/raw/ec-europa/rdf_entity/pull/79.diff",
-                    "Improve batch alias update @see https://github.com/ec-europa/rdf_entity/pull/81": "https://patch-diff.githubusercontent.com/raw/ec-europa/rdf_entity/pull/81.diff"
+                    "Temporary: Allow bundle label plural variants @see https://github.com/ec-europa/rdf_entity/pull/12": "resources/patch/rdf_entity-pr12.temp.patch"
                 }
             },
             "autoload": {
-                "classmap": [
-                    "driver/sparql/Connection.php"
-                ]
+                "psr-4": {
+                    "Drupal\\sparql_entity_storage\\": "../sparql_entity_storage/src"
+                }
             },
-            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
                 "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "claudiu.cristea",
-                    "homepage": "https://www.drupal.org/user/56348"
-                },
-                {
-                    "name": "dublutz",
-                    "homepage": "https://www.drupal.org/user/980246"
-                },
-                {
-                    "name": "idimopoulos",
-                    "homepage": "https://www.drupal.org/user/2578708"
-                },
-                {
-                    "name": "pfrenssen",
-                    "homepage": "https://www.drupal.org/user/382067"
-                },
-                {
-                    "name": "sandervd",
-                    "homepage": "https://www.drupal.org/user/346775"
-                },
-                {
-                    "name": "sardara",
-                    "homepage": "https://www.drupal.org/user/2353864"
-                }
             ],
             "description": "This module allows you to leverage the semantic web by storing and retrieving content directly from an RDF data store using the SPARQL RDF query language.",
             "homepage": "https://drupal.org/project/rdf_entity",
             "support": {
-                "source": "https://cgit.drupalcode.org/rdf_entity",
-                "issues": "https://drupal.org/project/issues/rdf_entity"
-            }
+                "issues": "https://drupal.org/project/issues/rdf_entity",
+                "source": "https://cgit.drupalcode.org/rdf_entity"
+            },
+            "time": "2019-01-10T16:42:48+00:00"
         },
         {
             "name": "drupal/redirect",
@@ -5199,6 +5167,65 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/social_media_links",
                 "issues": "https://www.drupal.org/project/issues/social_media_links"
+            }
+        },
+        {
+            "name": "drupal/sparql_entity_storage",
+            "version": "1.0.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/sparql_entity_storage",
+                "reference": "8.x-1.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/sparql_entity_storage-8.x-1.0-alpha1.zip",
+                "reference": "8.x-1.0-alpha1",
+                "shasum": "dde06d72bff45efd1f5a5f0949484a69f6aceb81"
+            },
+            "require": {
+                "drupal/core": "*",
+                "easyrdf/easyrdf": "0.10.0-alpha.1 as 0.9.2",
+                "ml/json-ld": "^1.0",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "minimaxir/big-list-of-naughty-strings": "dev-master"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha1",
+                    "datestamp": "1545058380",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "driver/sparql/Connection.php"
+                ]
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "claudiu.cristea",
+                    "homepage": "https://www.drupal.org/user/56348"
+                }
+            ],
+            "description": "Provides SPARQL entity storage and query for Drupal entities.",
+            "homepage": "https://drupal.org/project/sparql_entity_storage",
+            "support": {
+                "source": "https://cgit.drupalcode.org/sparql_entity_storage",
+                "issues": "https://drupal.org/project/issues/sparql_entity_storage"
             }
         },
         {
@@ -10966,12 +10993,6 @@
                 "url": "https://git.drupal.org/project/coder.git",
                 "reference": "29a25627e7148b3119c84f18e087fc3b8c85b959"
             },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/klausi/coder/zipball/29a25627e7148b3119c84f18e087fc3b8c85b959",
-                "reference": "29a25627e7148b3119c84f18e087fc3b8c85b959",
-                "shasum": ""
-            },
             "require": {
                 "ext-mbstring": "*",
                 "php": ">=5.4.0",
@@ -11927,6 +11948,17 @@
             "description": "Virtual file system to mock the real file system in unit tests.",
             "homepage": "http://vfs.bovigo.org/",
             "time": "2017-08-01T08:02:14+00:00"
+        },
+        {
+            "name": "minimaxir/big-list-of-naughty-strings",
+            "version": "dev-master",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/minimaxir/big-list-of-naughty-strings/archive/master.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "library"
         },
         {
             "name": "myclabs/deep-copy",
@@ -13652,6 +13684,7 @@
         "drupal/og": 20,
         "drupal/phingdrushtask": 20,
         "drupal/r4032login": 20,
+        "drupal/rdf_entity": 20,
         "drupal/subpathauto": 10,
         "drupal/swiftmailer": 10,
         "drupal/view_unpublished": 15,

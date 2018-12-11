@@ -2,19 +2,18 @@ langcode: en
 status: true
 dependencies:
   config:
-    - rdf_entity.graph.default
-    - rdf_entity.graph.draft
-    - rdf_entity.rdfentity.asset_release
+    - sparql_entity_storage.graph.default
+    - rdf_entity.rdfentity.asset_distribution
 third_party_settings:
   rdf_schema_field_validation:
     graph: 'http://adms-definition'
     class: 'http://www.w3.org/2000/01/rdf-schema#Class'
     property_predicates:
       - 'http://www.w3.org/2000/01/rdf-schema#domain'
-id: rdf_entity.asset_release
+id: rdf_entity.asset_distribution
 entity_type_id: rdf_entity
-bundle: asset_release
-rdf_type: 'http://www.w3.org/ns/dcat#Dataset'
+bundle: asset_distribution
+rdf_type: 'http://www.w3.org/ns/dcat#Distribution'
 base_fields_mapping:
   rid:
     target_id:
@@ -73,6 +72,5 @@ base_fields_mapping:
       predicate: 'http://joinup.eu/language/translation_changed_time'
       format: t_literal
 graph:
-  default: 'http://joinup.eu/asset_release/published'
-  draft: 'http://joinup.eu/asset_release/draft'
+  default: 'http://joinup.eu/asset_distribution/published'
 entity_id_plugin: joinup_po_namespace

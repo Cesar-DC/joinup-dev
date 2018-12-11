@@ -12,7 +12,7 @@ use Drupal\migrate\Plugin\MigrationInterface;
 use Drupal\redirect\Entity\Redirect;
 use Drupal\search_api\Entity\Index;
 use Drupal\Tests\BrowserTestBase;
-use Drupal\Tests\rdf_entity\Traits\RdfDatabaseConnectionTrait;
+use Drupal\Tests\sparql_entity_storage\Traits\RdfDatabaseConnectionTrait;
 use Drupal\Tests\rdf_entity\Traits\EntityUtilityTrait;
 
 /**

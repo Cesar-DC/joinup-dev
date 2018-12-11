@@ -10,7 +10,7 @@
  */
 function owner_update_8100() {
   /** @var \Drupal\Core\Database\Connection $connection */
-  $connection = \Drupal::service('sparql_endpoint');
+  $connection = \Drupal::service('sparql.endpoint');
   $query = <<<QUERY
 WITH <http://joinup.eu/owner/published>
 DELETE { ?subject <http://joinup.eu/voc/owner-type> ?object }

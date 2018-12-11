@@ -10,7 +10,7 @@
  */
 function asset_distribution_update_8100() {
   /** @var \Drupal\Core\Database\Connection $query */
-  $connection = \Drupal::service('sparql_endpoint');
+  $connection = \Drupal::service('sparql.endpoint');
   $query = <<<QUERY
 WITH <http://joinup.eu/asset_distribution/published>
 DELETE { ?subject <https://www.w3.org/TR/vocab-adms/#adms_representationTechnique> ?object }
