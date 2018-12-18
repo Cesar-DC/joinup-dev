@@ -253,3 +253,10 @@ WHERE {
 QUERY;
   $connection->query($query);
 }
+
+/**
+ * Enable sparql_entity_storage module.
+ */
+function joinup_core_update_8109() {
+  \Drupal::service('module_installer')->install(['sparql_entity_storage']);
+}
