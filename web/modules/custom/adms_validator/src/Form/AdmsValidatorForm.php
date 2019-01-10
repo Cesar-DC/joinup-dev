@@ -53,10 +53,10 @@ class AdmsValidatorForm extends FormBase {
    * Builds a new service instance.
    *
    * @param \Drupal\adms_validator\AdmsValidatorInterface $adms_validator
-   *   The ADMS validator service.  
+   *   The ADMS validator service.
    * @param \Symfony\Component\HttpFoundation\Session\Session $session
    *   The current user session.
-   * @param \Drupal\sparql_entity_storage\Database\Driver\sparql\ConnectionInterface $sparql_endpoint
+   * @param \Drupal\sparql_entity_storage\Database\Driver\sparql\ConnectionInterface $sparql
    *   The SPARQL endpoint.
    */
   public function __construct(AdmsValidatorInterface $adms_validator, Session $session, ConnectionInterface $sparql) {
