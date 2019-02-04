@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "3039a069631ea66f2ba799526dcace1c",
+    "content-hash": "64f67f655a2b1e436bac8d74c814847b",
     "packages": [
         {
             "name": "SEMICeu/adms-ap_validator",
@@ -4786,7 +4786,7 @@
             "version": "dev-7.x-2.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/pfrenssen/phingdrushtask.git",
+                "url": "git@github.com:pfrenssen/phingdrushtask.git",
                 "reference": "f4b020f09da3c174fce40f2bd9a9617689f57124"
             },
             "dist": {
@@ -5509,7 +5509,7 @@
             "version": "dev-empty-module",
             "source": {
                 "type": "git",
-                "url": "https://github.com/ec-europa/sparql_entity_storage.git",
+                "url": "git@github.com:ec-europa/sparql_entity_storage.git",
                 "reference": "2a9c3d22318bf5b861c253b40a1e4105d41b9fb7"
             },
             "dist": {
@@ -6321,7 +6321,7 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/ec-europa/joinup-tallinn-dashboard.git",
+                "url": "git@github.com:ec-europa/joinup-tallinn-dashboard.git",
                 "reference": "3ba9f87964fb6ece3c8f53904e47405e12f93ae0"
             },
             "dist": {
@@ -6358,7 +6358,7 @@
             "version": "2.1.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/ec-europa/virtuoso.git",
+                "url": "git@github.com:ec-europa/virtuoso.git",
                 "reference": "5991818b3a5c5a5bb74d3c18f1826d3d0e24321d"
             },
             "dist": {
@@ -6873,7 +6873,7 @@
                 "reference": "master"
             },
             "type": "drupal-theme-library",
-            "time": "2018-05-01T01:48:25+00:00"
+            "time": "2018-10-31T20:10:45+00:00"
         },
         {
             "name": "jakub-onderka/php-console-color",
@@ -12724,7 +12724,8 @@
             "homepage": "https://www.drupal.org/project/stage_file_proxy",
             "support": {
                 "source": "http://cgit.drupalcode.org/stage_file_proxy"
-            }
+            },
+            "time": "2018-08-02T15:21:36+00:00"
         },
         {
             "name": "fabpot/goutte",
@@ -14767,6 +14768,7 @@
     "stability-flags": {
         "drupal/diff": 5,
         "drupal/flag": 15,
+        "drupal/geocoder": 20,
         "drupal/geofield": 10,
         "drupal/migrate_run": 10,
         "drupal/phingdrushtask": 20,

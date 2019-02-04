@@ -26,7 +26,7 @@
         "drupal/field_group": "~1.0-rc6",
         "drupal/file_url": "~1.0",
         "drupal/flag": "^4.0@alpha",
-        "drupal/geocoder": "^3.0",
+        "drupal/geocoder": "3.x-dev",
         "drupal/geofield": "^1.0@beta",
         "drupal/honeypot": "^1.27",
         "drupal/inline_entity_form": "^1.0-rc1",
