@@ -47,7 +47,7 @@
         "drupal/persistent_login": "~1.0",
         "drupal/phingdrushtask": "dev-7.x-2.x#f4b020f09da3c174fce40f2bd9a9617689f57124",
         "drupal/r4032login": "1.1.0",
-        "drupal/rdf_entity": "^1.0.0-alpha12",
+        "drupal/rdf_entity": "1.0.0-alpha13",
         "drupal/redirect": "^1.0",
         "drupal/redis": "^1.1",
         "drupal/search_api": "^1.11",
