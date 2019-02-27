@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "75e6c2f390e0c066feb08c4eaee0c37a",
+    "content-hash": "8e7e4c99e4911b0fae3019a03615e487",
     "packages": [
         {
             "name": "SEMICeu/adms-ap_validator",
@@ -2167,7 +2167,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -2265,7 +2265,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -2315,6 +2315,14 @@
                 "GPL-2.0-or-later"
             ],
             "authors": [
+                {
+                    "name": "bircher",
+                    "homepage": "https://www.drupal.org/user/1344166"
+                },
+                {
+                    "name": "gnuget",
+                    "homepage": "https://www.drupal.org/user/992990"
+                },
                 {
                     "name": "mlncn",
                     "homepage": "https://www.drupal.org/user/64383"
@@ -2427,8 +2435,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha6+2-dev",
-                    "datestamp": "1513615684",
+                    "version": "8.x-1.0-alpha7",
+                    "datestamp": "1521314235",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -2438,9 +2446,6 @@
                     "services": {
                         "drush.services.yml": "^9"
                     }
-                },
-                "patches_applied": {
-                    "Perform a clean refresh after the importing through the drush command @see https://www.drupal.org/node/2971610": "https://www.drupal.org/files/issues/2018-05-09/perform_clean_refresh_2971610-5-D8.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2845,7 +2850,7 @@
                 },
                 "drupal": {
                     "version": "8.x-3.0",
-                    "datestamp": "1493401742",
+                    "datestamp": "1549603381",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2881,6 +2886,10 @@
                     "name": "Daniel Wehner (dawehner)",
                     "homepage": "https://www.drupal.org/u/dawehner",
                     "role": "Maintainer"
+                },
+                {
+                    "name": "joelpittet",
+                    "homepage": "https://www.drupal.org/user/160302"
                 },
                 {
                     "name": "merlinofchaos",
@@ -3201,9 +3210,6 @@
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
                     }
-                },
-                "patches_applied": {
-                    "Allow username on the registration form @see https://www.drupal.org/project/email_registration/issues/2927109": "https://www.drupal.org/files/issues/2019-01-10/2927109-10.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3271,9 +3277,6 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
-                },
-                "patches_applied": {
-                    "Facet Summary for Facet Items with a set dependency. @see https://www.drupal.org/node/2873480": "resources/patch/facet_summary_for_facet-2873480-18.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3460,7 +3463,7 @@
                 },
                 "drupal": {
                     "version": "8.x-4.0-alpha3",
-                    "datestamp": "1521598685",
+                    "datestamp": "1521598850",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -3517,7 +3520,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/geocoder",
-                "reference": "c4d5073d8fe80a7d2732a6996e9e7b2b4a24eb1e"
+                "reference": "13bbe218223db34a32438fd8c1ef632c639cdc91"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -3559,7 +3562,7 @@
                 },
                 "drupal": {
                     "version": "8.x-3.x-dev",
-                    "datestamp": "1547609284",
+                    "datestamp": "1549431784",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -3625,7 +3628,7 @@
                 "issues": "https://drupal.org/project/issues/geocoder",
                 "irc": "irc://irc.freenode.org/drupal-geo"
             },
-            "time": "2019-02-03T23:19:58+00:00"
+            "time": "2019-02-12T05:25:33+00:00"
         },
         {
             "name": "drupal/geofield",
@@ -3796,10 +3799,6 @@
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
                     }
-                },
-                "patches_applied": {
-                    "Required IEF forms for existing entities don't work. @see https://www.drupal.org/node/2830328": "https://www.drupal.org/files/issues/inline_entity_form-existing_reference_no_submit-2830328-5-D8.patch",
-                    "Autocomplete field doesn't allow to reference entities with long titles @see https://www.drupal.org/node/2895663": "https://www.drupal.org/files/issues/2895663-2.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3866,9 +3865,6 @@
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
                     }
-                },
-                "patches_applied": {
-                    "Link shown after the autocomplete selection is the bare node/xxx link, not the alias @see https://www.drupal.org/node/2877535": "https://www.drupal.org/files/issues/2877535-4.linkit.Link-shown-after-the-autocomplete-selection-is-the-bare-nodexxx-link-not-the-alias.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3981,7 +3977,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.8",
-                    "datestamp": "1548968880",
+                    "datestamp": "1549615080",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4040,9 +4036,6 @@
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
                     }
-                },
-                "patches_applied": {
-                    "Migrate from 'piwik_reporting_api' @see https://www.drupal.org/project/matomo_reporting_api/issues/2993831": "https://www.drupal.org/files/issues/2018-08-20/2993831-2.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -4229,9 +4222,6 @@
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
                     }
-                },
-                "patches_applied": {
-                    "Calling assert() with a string argument is deprecated @see https://www.drupal.org/project/message_notify/issues/2966213": "https://www.drupal.org/files/issues/2018-10-15/2966213-3.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -4293,7 +4283,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -4395,8 +4385,8 @@
                     "version": "8.x-1.0",
                     "datestamp": "1514929984",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -4564,6 +4554,10 @@
                     "homepage": "https://www.drupal.org/user/84179"
                 },
                 {
+                    "name": "mpp",
+                    "homepage": "https://www.drupal.org/user/359881"
+                },
+                {
                     "name": "pfrenssen",
                     "homepage": "https://www.drupal.org/user/382067"
                 },
@@ -4609,14 +4603,11 @@
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
                     }
-                },
-                "patches_applied": {
-                    "Do not override the default user entity view. @see https://www.drupal.org/node/2650192": "https://www.drupal.org/files/issues/properly_place_fields-2650192-4-D8.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -4677,9 +4668,6 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
-                },
-                "patches_applied": {
-                    "Drush commands for bulk alias updates @see https://www.drupal.org/project/pathauto/issues/2717721": "https://www.drupal.org/files/issues/2019-01-10/2717721-21.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -4766,7 +4754,7 @@
             "version": "dev-7.x-2.x",
             "source": {
                 "type": "git",
-                "url": "git@github.com:pfrenssen/phingdrushtask.git",
+                "url": "https://github.com/pfrenssen/phingdrushtask.git",
                 "reference": "f4b020f09da3c174fce40f2bd9a9617689f57124"
             },
             "dist": {
@@ -4968,14 +4956,6 @@
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
                     }
-                },
-                "patches_applied": {
-                    "Allow bundle label plural variants @see https://github.com/ec-europa/rdf_entity/pull/12": "https://patch-diff.githubusercontent.com/raw/ec-europa/rdf_entity/pull/12.diff",
-                    "Ensure a predictable order of fields when serializing @see https://github.com/ec-europa/rdf_entity/pull/76": "https://patch-diff.githubusercontent.com/raw/ec-europa/rdf_entity/pull/76.diff",
-                    "Fix endless loop due to orphaned aliases @see https://github.com/ec-europa/rdf_entity/pull/78": "https://patch-diff.githubusercontent.com/raw/ec-europa/rdf_entity/pull/78.diff",
-                    "Implement batch delete of aliases @see https://github.com/ec-europa/rdf_entity/pull/71": "https://patch-diff.githubusercontent.com/raw/ec-europa/rdf_entity/pull/79.diff",
-                    "Improve batch alias update @see https://github.com/ec-europa/rdf_entity/pull/81": "https://patch-diff.githubusercontent.com/raw/ec-europa/rdf_entity/pull/81.diff",
-                    "Iterate through fetched entries in the Serializer @see https://github.com/ec-europa/rdf_entity/pull/82": "https://patch-diff.githubusercontent.com/raw/ec-europa/rdf_entity/pull/82.diff"
                 }
             },
             "autoload": {
@@ -5177,10 +5157,6 @@
                     "services": {
                         "drush.services.yml": "^9"
                     }
-                },
-                "patches_applied": {
-                    "Views cached results are not taking into account the access check. @see https://www.drupal.org/node/2824640": "https://www.drupal.org/files/issues/views_cached_results-2824640-13.patch",
-                    "item_id column is too short. @see https://www.drupal.org/node/2829696": "https://www.drupal.org/files/issues/item_id_column_is_too_short-2829696-10-D8.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -5332,16 +5308,17 @@
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
                     }
-                },
-                "patches_applied": {
-                    "Avoid double sync of fields from subscription to user when user is being saved @see https://www.drupal.org/node/2914814": "https://www.drupal.org/files/issues/2914814-2.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
+                {
+                    "name": "AdamPS",
+                    "homepage": "https://www.drupal.org/user/2650563"
+                },
                 {
                     "name": "AlexisWilke",
                     "homepage": "https://www.drupal.org/user/356197"
@@ -5398,9 +5375,6 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
-                },
-                "patches_applied": {
-                    "Additional options checkbox do not appear to save @see https://www.drupal.org/project/smart_trim/issues/2941492": "https://www.drupal.org/files/issues/2018-05-04/2941492-4.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -5470,10 +5444,6 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
-                },
-                "patches_applied": {
-                    "Missing config schema for field, widget and formatter @see https://www.drupal.org/node/2898680": "https://www.drupal.org/files/issues/2898680-6.patch",
-                    "Plugins with URL prefix should not allow URLs as user input @see https://www.drupal.org/node/2898726": "https://www.drupal.org/files/issues/2898726-3.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -5495,19 +5465,20 @@
         },
         {
             "name": "drupal/sparql_entity_storage",
-            "version": "dev-empty-module",
+            "version": "1.0.0-alpha1",
             "source": {
                 "type": "git",
-                "url": "git@github.com:ec-europa/sparql_entity_storage.git",
-                "reference": "2a9c3d22318bf5b861c253b40a1e4105d41b9fb7"
+                "url": "https://git.drupal.org/project/sparql_entity_storage",
+                "reference": "8.x-1.0-alpha1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ec-europa/sparql_entity_storage/zipball/2a9c3d22318bf5b861c253b40a1e4105d41b9fb7",
-                "reference": "2a9c3d22318bf5b861c253b40a1e4105d41b9fb7",
-                "shasum": ""
+                "url": "https://ftp.drupal.org/files/projects/sparql_entity_storage-8.x-1.0-alpha1.zip",
+                "reference": "8.x-1.0-alpha1",
+                "shasum": "dde06d72bff45efd1f5a5f0949484a69f6aceb81"
             },
             "require": {
+                "drupal/core": "*",
                 "easyrdf/easyrdf": "0.10.0-alpha.1 as 0.9.2",
                 "ml/json-ld": "^1.0",
                 "php": ">=7.1"
@@ -5516,16 +5487,40 @@
                 "minimaxir/big-list-of-naughty-strings": "dev-master"
             },
             "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha1",
+                    "datestamp": "1545058380",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "driver/sparql/Connection.php"
+                ]
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
                 "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "claudiu.cristea",
+                    "homepage": "https://www.drupal.org/user/56348"
+                }
             ],
             "description": "Provides SPARQL entity storage and query for Drupal entities.",
             "homepage": "https://drupal.org/project/sparql_entity_storage",
             "support": {
-                "issues": "https://drupal.org/project/issues/sparql_entity_storage",
-                "source": "https://cgit.drupalcode.org/sparql_entity_storage"
-            },
-            "time": "2019-01-10T17:53:49+00:00"
+                "source": "https://cgit.drupalcode.org/sparql_entity_storage",
+                "issues": "https://drupal.org/project/issues/sparql_entity_storage"
+            }
         },
         {
             "name": "drupal/state_machine",
@@ -5556,12 +5551,6 @@
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
                     }
-                },
-                "patches_applied": {
-                    "Fire generic events when transition are applied. @see https://www.drupal.org/node/2832415": "https://www.drupal.org/files/issues/fire_generic_events-2832415-2.patch",
-                    "Schema validation error when running functional tests. @see https://www.drupal.org/node/2838952": "https://www.drupal.org/files/issues/schema_validation_error-2838952-2.patch",
-                    "Move static cache to the loading of the workflow. @see https://www.drupal.org/node/2846986": "https://www.drupal.org/files/issues/state_machine-fixing_the_issue_with_static_cache-2846986-10-D8.patch",
-                    "Allow access to the initialValue protected property. @see https://www.drupal.org/node/2896479": "https://www.drupal.org/files/issues/allow_access_to_initial_value-2896479-2-D8.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -5711,10 +5700,6 @@
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
                     }
-                },
-                "patches_applied": {
-                    "Error after updating to beta2 @see https://www.drupal.org/node/2875026": "https://www.drupal.org/files/issues/2948607-2.patch",
-                    "Add spooling for increased performance @see https://www.drupal.org/project/swiftmailer/issues/3000553": "https://www.drupal.org/files/issues/2018-11-07/3000553-9_includes-3000546-4.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -5837,15 +5822,12 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x",
-                    "datestamp": "1493246342",
+                    "datestamp": "1510132373",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     },
                     "package": "Field types"
-                },
-                "patches_applied": {
-                    "Allow also YouTube embed URLs. Improve the YT regexp @see https://www.drupal.org/node/2899093": "https://www.drupal.org/files/issues/2899093-8.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -5905,7 +5887,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -6024,9 +6006,6 @@
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
                     }
-                },
-                "patches_applied": {
-                    "Display schema should extend rest export @see https://www.drupal.org/project/views_data_export/issues/2896104": "https://www.drupal.org/files/issues/2896104-2-fix_display_schema.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -6310,7 +6289,7 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "git@github.com:ec-europa/joinup-tallinn-dashboard.git",
+                "url": "https://github.com/ec-europa/joinup-tallinn-dashboard.git",
                 "reference": "3ba9f87964fb6ece3c8f53904e47405e12f93ae0"
             },
             "dist": {
@@ -6347,7 +6326,7 @@
             "version": "2.1.3",
             "source": {
                 "type": "git",
-                "url": "git@github.com:ec-europa/virtuoso.git",
+                "url": "https://github.com/ec-europa/virtuoso.git",
                 "reference": "5991818b3a5c5a5bb74d3c18f1826d3d0e24321d"
             },
             "dist": {
@@ -11499,9 +11478,6 @@
             "extra": {
                 "branch-alias": {
                     "dev-master": "4.4-dev"
-                },
-                "patches_applied": {
-                    "Correctly filter features, now that the base path is correctly set": "https://patch-diff.githubusercontent.com/raw/Behat/Gherkin/pull/129.patch"
                 }
             },
             "autoload": {
@@ -11943,7 +11919,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.26",
-                    "datestamp": "1549218480",
+                    "datestamp": "1549559402",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -12232,10 +12208,6 @@
                 {
                     "name": "larowlan",
                     "homepage": "https://www.drupal.org/user/395439"
-                },
-                {
-                    "name": "matslats",
-                    "homepage": "https://www.drupal.org/user/140053"
                 }
             ],
             "description": "Imports default content when a module is enabled",
@@ -12496,9 +12468,6 @@
                     "../build/themes/contrib/{$name}": [
                         "type:drupal-theme"
                     ]
-                },
-                "patches_applied": {
-                    "Provide an option to persist the cache. @see https://github.com/pfrenssen/filecache/pull/2": "https://patch-diff.githubusercontent.com/raw/pfrenssen/filecache/pull/2.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -12522,8 +12491,7 @@
             "support": {
                 "source": "https://cgit.drupalcode.org/filecache",
                 "issues": "https://drupal.org/project/issues/filecache"
-            },
-            "time": "2018-11-28T06:44:23+00:00"
+            }
         },
         {
             "name": "drupal/renderviz",
@@ -12713,8 +12681,7 @@
             "homepage": "https://www.drupal.org/project/stage_file_proxy",
             "support": {
                 "source": "http://cgit.drupalcode.org/stage_file_proxy"
-            },
-            "time": "2018-08-02T15:21:36+00:00"
+            }
         },
         {
             "name": "fabpot/goutte",
@@ -13925,6 +13892,7 @@
                 "mock",
                 "xunit"
             ],
+            "abandoned": true,
             "time": "2018-08-09T05:50:03+00:00"
         },
         {
@@ -14761,7 +14729,6 @@
         "drupal/geofield": 10,
         "drupal/migrate_run": 10,
         "drupal/phingdrushtask": 20,
-        "drupal/sparql_entity_storage": 20,
         "drupal/subpathauto": 5,
         "drupal/swiftmailer": 10,
         "drupal/view_unpublished": 15,
