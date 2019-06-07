@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "0c7d1c25ef606024f921523c71592fa4",
+    "content-hash": "1a0dc85bdccb4c3d23fd23c67197f4e5",
     "packages": [
         {
             "name": "SEMICeu/adms-ap_validator",
@@ -2828,20 +2828,20 @@
         },
         {
             "name": "drupal/ctools",
-            "version": "3.0.0",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/ctools.git",
-                "reference": "8.x-3.0"
+                "reference": "8.x-3.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ctools-8.x-3.0.zip",
-                "reference": "8.x-3.0",
-                "shasum": "302e869ecd1e59fe55663673999fee2ccac5daa8"
+                "url": "https://ftp.drupal.org/files/projects/ctools-8.x-3.2.zip",
+                "reference": "8.x-3.2",
+                "shasum": "d6da87239b64ba708a5977e7b33b1e009e36b091"
             },
             "require": {
-                "drupal/core": "~8.0"
+                "drupal/core": "^8.5"
             },
             "type": "drupal-module",
             "extra": {
@@ -2849,8 +2849,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0",
-                    "datestamp": "1549603381",
+                    "version": "8.x-3.2",
+                    "datestamp": "1550728386",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2944,7 +2944,7 @@
                 },
                 "drupal": {
                     "version": "8.x-2.0",
-                    "datestamp": "1548799380",
+                    "datestamp": "1556799496",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3290,7 +3290,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-rc6",
-                    "datestamp": "1545350880",
+                    "datestamp": "1557344281",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -3357,7 +3357,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.3",
-                    "datestamp": "1551291083",
+                    "datestamp": "1556645881",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3477,7 +3477,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-alpha6",
-                    "datestamp": "1504220345",
+                    "datestamp": "1556632685",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -3906,6 +3906,14 @@
                 {
                     "name": "dawehner",
                     "homepage": "https://www.drupal.org/user/99340"
+                },
+                {
+                    "name": "joachim",
+                    "homepage": "https://www.drupal.org/user/107701"
+                },
+                {
+                    "name": "kaythay",
+                    "homepage": "https://www.drupal.org/user/2182186"
                 },
                 {
                     "name": "rszrama",
@@ -4676,21 +4684,21 @@
         },
         {
             "name": "drupal/password_policy",
-            "version": "3.0.0-alpha4",
+            "version": "3.0.0-alpha5",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/password_policy.git",
-                "reference": "8.x-3.0-alpha4"
+                "reference": "8.x-3.0-alpha5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/password_policy-8.x-3.0-alpha4.zip",
-                "reference": "8.x-3.0-alpha4",
-                "shasum": "79997599fbce390e79eda0aba10f403324c48b99"
+                "url": "https://ftp.drupal.org/files/projects/password_policy-8.x-3.0-alpha5.zip",
+                "reference": "8.x-3.0-alpha5",
+                "shasum": "74f170caa739e886d2de0df27a479f94014e273f"
             },
             "require": {
-                "drupal/core": "*",
-                "drupal/ctools": "*"
+                "drupal/core": "^8.5.0",
+                "drupal/ctools": "^3.1"
             },
             "type": "drupal-module",
             "extra": {
@@ -4698,8 +4706,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0-alpha4",
-                    "datestamp": "1506649448",
+                    "version": "8.x-3.0-alpha5",
+                    "datestamp": "1559915584",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -4855,7 +4863,7 @@
             "version": "dev-7.x-2.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/pfrenssen/phingdrushtask.git",
+                "url": "git@github.com:pfrenssen/phingdrushtask.git",
                 "reference": "f4b020f09da3c174fce40f2bd9a9617689f57124"
             },
             "dist": {
@@ -5923,7 +5931,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x",
-                    "datestamp": "1510132373",
+                    "datestamp": "1557724385",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6397,7 +6405,7 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/ec-europa/joinup-tallinn-dashboard.git",
+                "url": "git@github.com:ec-europa/joinup-tallinn-dashboard.git",
                 "reference": "3ba9f87964fb6ece3c8f53904e47405e12f93ae0"
             },
             "dist": {
@@ -6434,7 +6442,7 @@
             "version": "2.1.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/ec-europa/virtuoso.git",
+                "url": "git@github.com:ec-europa/virtuoso.git",
                 "reference": "5991818b3a5c5a5bb74d3c18f1826d3d0e24321d"
             },
             "dist": {
@@ -6458,10 +6466,6 @@
                     "email": "sander.vandooren@ausy.be"
                 }
             ],
-            "support": {
-                "source": "https://github.com/ec-europa/virtuoso/tree/2.1.3",
-                "issues": "https://github.com/ec-europa/virtuoso/issues"
-            },
             "time": "2019-01-29T12:41:51+00:00"
         },
         {
@@ -11245,7 +11249,7 @@
             ],
             "authors": [
                 {
-                    "name": "William DURAND",
+                    "name": "William Durand",
                     "email": "william.durand1@gmail.com"
                 }
             ],
@@ -12027,7 +12031,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.26",
-                    "datestamp": "1549559402",
+                    "datestamp": "1558552081",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -12277,7 +12281,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-alpha7",
-                    "datestamp": "1508448545",
+                    "datestamp": "1556924587",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -12609,7 +12613,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.16",
-                    "datestamp": "1541330284",
+                    "datestamp": "1557845661",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -12989,7 +12993,7 @@
             "time": "2018-10-08T08:43:00+00:00"
         },
         {
-            "name": "mikey179/vfsStream",
+            "name": "mikey179/vfsstream",
             "version": "v1.6.5",
             "source": {
                 "type": "git",

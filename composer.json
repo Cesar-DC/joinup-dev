@@ -42,7 +42,7 @@
         "drupal/migrate_spreadsheet": "~1.0",
         "drupal/og": "^1.0-alpha2",
         "drupal/og_menu": "^1.0-alpha3",
-        "drupal/password_policy": "^3.0-alpha4",
+        "drupal/password_policy": "3.0.0-alpha5",
         "drupal/pathauto": "~1.1",
         "drupal/persistent_login": "~1.0",
         "drupal/phingdrushtask": "dev-7.x-2.x#f4b020f09da3c174fce40f2bd9a9617689f57124",
