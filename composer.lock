@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1a0dc85bdccb4c3d23fd23c67197f4e5",
+    "content-hash": "bd84997bf0fb63ea42b1dee9b0d17f33",
     "packages": [
         {
             "name": "SEMICeu/adms-ap_validator",
@@ -3605,7 +3605,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/geocoder.git",
-                "reference": "3cbc4bcf6e9d9c144a93fd685aed8a1f1a80bbf2"
+                "reference": "d4eda4e5e942f2dca7d09ff88beb0369b508c00f"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -3646,8 +3646,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.x-dev",
-                    "datestamp": "1554291181",
+                    "version": "8.x-3.0-alpha1+0-dev",
+                    "datestamp": "1560481389",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -3713,7 +3713,7 @@
                 "issues": "https://drupal.org/project/issues/geocoder",
                 "irc": "irc://irc.freenode.org/drupal-geo"
             },
-            "time": "2019-04-03T11:32:53+00:00"
+            "time": "2019-06-14T02:59:00+00:00"
         },
         {
             "name": "drupal/geofield",
@@ -3936,17 +3936,17 @@
         },
         {
             "name": "drupal/linkit",
-            "version": "5.0.0-beta8",
+            "version": "5.0.0-beta9",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/linkit.git",
-                "reference": "8.x-5.0-beta8"
+                "reference": "8.x-5.0-beta9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/linkit-8.x-5.0-beta8.zip",
-                "reference": "8.x-5.0-beta8",
-                "shasum": "677be19d6128f1d5c6d239132e98b1817ad91acb"
+                "url": "https://ftp.drupal.org/files/projects/linkit-8.x-5.0-beta9.zip",
+                "reference": "8.x-5.0-beta9",
+                "shasum": "150291dd87a4f65027492020c28635e2b5249d1a"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -3960,8 +3960,8 @@
                     "dev-5.x": "5.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-5.0-beta8",
-                    "datestamp": "1545966784",
+                    "version": "8.x-5.0-beta9",
+                    "datestamp": "1562194985",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -4544,7 +4544,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-alpha2",
-                    "datestamp": "1545216480",
+                    "datestamp": "1560179584",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -4707,7 +4707,7 @@
                 },
                 "drupal": {
                     "version": "8.x-3.0-alpha5",
-                    "datestamp": "1559915584",
+                    "datestamp": "1559916365",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -5133,7 +5133,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.3",
-                    "datestamp": "1539682684",
+                    "datestamp": "1561757585",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
