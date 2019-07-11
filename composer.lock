@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "bd84997bf0fb63ea42b1dee9b0d17f33",
+    "content-hash": "b1ec4212ca9c9d54f5a2f4879739d06c",
     "packages": [
         {
             "name": "SEMICeu/adms-ap_validator",
@@ -2277,6 +2277,77 @@
             "homepage": "https://www.drupal.org/project/changed_fields",
             "support": {
                 "source": "https://git.drupalcode.org/project/changed_fields"
+            }
+        },
+        {
+            "name": "drupal/config_devel",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/config_devel.git",
+                "reference": "8.x-1.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/config_devel-8.x-1.3.zip",
+                "reference": "8.x-1.3",
+                "shasum": "ab880088bbbe955d9c9521655d73bf1a40ca75b8"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.3",
+                    "datestamp": "1562862184",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "alexpott",
+                    "homepage": "https://www.drupal.org/user/157725"
+                },
+                {
+                    "name": "benjy",
+                    "homepage": "https://www.drupal.org/user/1852732"
+                },
+                {
+                    "name": "chx",
+                    "homepage": "https://www.drupal.org/user/9446"
+                },
+                {
+                    "name": "joachim",
+                    "homepage": "https://www.drupal.org/user/107701"
+                },
+                {
+                    "name": "nedjo",
+                    "homepage": "https://www.drupal.org/user/4481"
+                },
+                {
+                    "name": "tim.plunkett",
+                    "homepage": "https://www.drupal.org/user/241634"
+                },
+                {
+                    "name": "vijaycs85",
+                    "homepage": "https://www.drupal.org/user/93488"
+                }
+            ],
+            "description": "Helps developers work with configuration.",
+            "homepage": "https://www.drupal.org/project/config_devel",
+            "support": {
+                "source": "https://git.drupalcode.org/project/config_devel"
             }
         },
         {
@@ -4863,7 +4934,7 @@
             "version": "dev-7.x-2.x",
             "source": {
                 "type": "git",
-                "url": "git@github.com:pfrenssen/phingdrushtask.git",
+                "url": "https://github.com/pfrenssen/phingdrushtask.git",
                 "reference": "f4b020f09da3c174fce40f2bd9a9617689f57124"
             },
             "dist": {
@@ -6405,7 +6476,7 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "git@github.com:ec-europa/joinup-tallinn-dashboard.git",
+                "url": "https://github.com/ec-europa/joinup-tallinn-dashboard.git",
                 "reference": "3ba9f87964fb6ece3c8f53904e47405e12f93ae0"
             },
             "dist": {
@@ -6442,7 +6513,7 @@
             "version": "2.1.3",
             "source": {
                 "type": "git",
-                "url": "git@github.com:ec-europa/virtuoso.git",
+                "url": "https://github.com/ec-europa/virtuoso.git",
                 "reference": "5991818b3a5c5a5bb74d3c18f1826d3d0e24321d"
             },
             "dist": {
@@ -6466,6 +6537,10 @@
                     "email": "sander.vandooren@ausy.be"
                 }
             ],
+            "support": {
+                "source": "https://github.com/ec-europa/virtuoso/tree/2.1.3",
+                "issues": "https://github.com/ec-europa/virtuoso/issues"
+            },
             "time": "2019-01-29T12:41:51+00:00"
         },
         {
@@ -11249,7 +11324,7 @@
             ],
             "authors": [
                 {
-                    "name": "William Durand",
+                    "name": "William DURAND",
                     "email": "william.durand1@gmail.com"
                 }
             ],
@@ -12124,77 +12199,6 @@
                 "standards"
             ],
             "time": "2018-09-21T14:22:49+00:00"
-        },
-        {
-            "name": "drupal/config_devel",
-            "version": "1.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/config_devel.git",
-                "reference": "8.x-1.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/config_devel-8.x-1.2.zip",
-                "reference": "8.x-1.2",
-                "shasum": "203bf299b1ad395d1451e22ea5a8f25ae462d880"
-            },
-            "require": {
-                "drupal/core": "~8.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.2",
-                    "datestamp": "1510843084",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "alexpott",
-                    "homepage": "https://www.drupal.org/user/157725"
-                },
-                {
-                    "name": "benjy",
-                    "homepage": "https://www.drupal.org/user/1852732"
-                },
-                {
-                    "name": "chx",
-                    "homepage": "https://www.drupal.org/user/9446"
-                },
-                {
-                    "name": "joachim",
-                    "homepage": "https://www.drupal.org/user/107701"
-                },
-                {
-                    "name": "nedjo",
-                    "homepage": "https://www.drupal.org/user/4481"
-                },
-                {
-                    "name": "tim.plunkett",
-                    "homepage": "https://www.drupal.org/user/241634"
-                },
-                {
-                    "name": "vijaycs85",
-                    "homepage": "https://www.drupal.org/user/93488"
-                }
-            ],
-            "description": "Helps developers work with configuration.",
-            "homepage": "https://www.drupal.org/project/config_devel",
-            "support": {
-                "source": "https://git.drupalcode.org/project/config_devel"
-            }
         },
         {
             "name": "drupal/config_inspector",
