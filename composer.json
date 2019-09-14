@@ -31,7 +31,7 @@
         "drupal/geocoder": "3.x-dev",
         "drupal/geofield": "1.2.0",
         "drupal/honeypot": "^1.27",
-        "drupal/inline_entity_form": "^1.0-rc1",
+        "drupal/inline_entity_form": "1.0.0-rc2",
         "drupal/linkit": "5.0.0-beta9",
         "drupal/matomo": "^1.7",
         "drupal/matomo_reporting_api": "~2.0",
