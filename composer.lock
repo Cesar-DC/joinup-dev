@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "34f23b99c79372ddbd069a538b8a4ef4",
+    "content-hash": "5b5a9c267679f959581a3be6daeaec20",
     "packages": [
         {
             "name": "SEMICeu/adms-ap_validator",
@@ -2351,6 +2351,76 @@
             }
         },
         {
+            "name": "drupal/config_inspector",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/config_inspector.git",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/config_inspector-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "dc92ceb8fd3e289f9e5c058692346e4b9ef3fa74"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1569419586",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Gábor Hojtsy",
+                    "homepage": "https://www.drupal.org/user/4166"
+                },
+                {
+                    "name": "Jose Reyero",
+                    "homepage": "https://www.drupal.org/user/4299"
+                },
+                {
+                    "name": "aspilicious",
+                    "homepage": "https://www.drupal.org/user/172527"
+                },
+                {
+                    "name": "ilchovuchkov",
+                    "homepage": "https://www.drupal.org/user/3568458"
+                },
+                {
+                    "name": "vijaycs85",
+                    "homepage": "https://www.drupal.org/user/93488"
+                }
+            ],
+            "description": "Provides a configuration data and structure inspector tool",
+            "homepage": "https://drupal.org/project/config_inspector",
+            "support": {
+                "source": "https://cgit.drupalcode.org/config_inspector",
+                "issues": "https://drupal.org/project/issues/config_inspector",
+                "irc": "irc://irc.freenode.org/drupal-contribute"
+            }
+        },
+        {
             "name": "drupal/config_provider",
             "version": "1.0.0-beta7",
             "source": {
@@ -3631,6 +3701,10 @@
                 "GPL-2.0-or-later"
             ],
             "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
                 {
                     "name": "fago",
                     "homepage": "https://www.drupal.org/user/16747"
@@ -4935,7 +5009,7 @@
             "version": "dev-7.x-2.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/pfrenssen/phingdrushtask.git",
+                "url": "git@github.com:pfrenssen/phingdrushtask.git",
                 "reference": "f4b020f09da3c174fce40f2bd9a9617689f57124"
             },
             "dist": {
@@ -6189,7 +6263,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-beta1",
-                    "datestamp": "1525280285",
+                    "datestamp": "1569361684",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -6514,7 +6588,7 @@
             "version": "2.1.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/ec-europa/virtuoso.git",
+                "url": "git@github.com:ec-europa/virtuoso.git",
                 "reference": "5991818b3a5c5a5bb74d3c18f1826d3d0e24321d"
             },
             "dist": {
@@ -6538,10 +6612,6 @@
                     "email": "sander.vandooren@ausy.be"
                 }
             ],
-            "support": {
-                "source": "https://github.com/ec-europa/virtuoso/tree/2.1.3",
-                "issues": "https://github.com/ec-europa/virtuoso/issues"
-            },
             "time": "2019-01-29T12:41:51+00:00"
         },
         {
@@ -7706,9 +7776,9 @@
             "authors": [
                 {
                     "name": "Markus Lanthaler",
-                    "role": "Developer",
                     "email": "mail@markus-lanthaler.com",
-                    "homepage": "http://www.markus-lanthaler.com"
+                    "homepage": "http://www.markus-lanthaler.com",
+                    "role": "Developer"
                 }
             ],
             "description": "IRI handling for PHP",
@@ -7757,9 +7827,9 @@
             "authors": [
                 {
                     "name": "Markus Lanthaler",
-                    "role": "Developer",
                     "email": "mail@markus-lanthaler.com",
-                    "homepage": "http://www.markus-lanthaler.com"
+                    "homepage": "http://www.markus-lanthaler.com",
+                    "role": "Developer"
                 }
             ],
             "description": "JSON-LD Processor for PHP",
@@ -8319,8 +8389,8 @@
             "authors": [
                 {
                     "name": "Kousuke Ebihara",
-                    "role": "Lead",
-                    "email": "ebihara@php.net"
+                    "email": "ebihara@php.net",
+                    "role": "Lead"
                 }
             ],
             "description": "VersionControl_Git is a library that provides OO interface to handle Git repository.",
@@ -12202,71 +12272,6 @@
             "time": "2018-09-21T14:22:49+00:00"
         },
         {
-            "name": "drupal/config_inspector",
-            "version": "1.0.0-beta2",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/config_inspector.git",
-                "reference": "8.x-1.0-beta2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/config_inspector-8.x-1.0-beta2.zip",
-                "reference": "8.x-1.0-beta2",
-                "shasum": "1f7b27c4b1c800a605a6d6583d0b1d120794658e"
-            },
-            "require": {
-                "drupal/core": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0-beta2",
-                    "datestamp": "1537879680",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Gábor Hojtsy",
-                    "homepage": "https://www.drupal.org/user/4166"
-                },
-                {
-                    "name": "Jose Reyero",
-                    "homepage": "https://www.drupal.org/user/4299"
-                },
-                {
-                    "name": "aspilicious",
-                    "homepage": "https://www.drupal.org/user/172527"
-                },
-                {
-                    "name": "ilchovuchkov",
-                    "homepage": "https://www.drupal.org/user/3568458"
-                },
-                {
-                    "name": "vijaycs85",
-                    "homepage": "https://www.drupal.org/user/93488"
-                }
-            ],
-            "description": "Provides a configuration data and structure inspector tool",
-            "homepage": "https://drupal.org/project/config_inspector",
-            "support": {
-                "source": "https://cgit.drupalcode.org/config_inspector",
-                "issues": "https://drupal.org/project/issues/config_inspector",
-                "irc": "irc://irc.freenode.org/drupal-contribute"
-            }
-        },
-        {
             "name": "drupal/default_content",
             "version": "1.0.0-alpha7",
             "source": {
@@ -12473,7 +12478,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/filecache.git",
-                "reference": "0291f94eb7132cdbe9a0485d6fe145915b2dc269"
+                "reference": "474f3562b045200b5abb983ee94c9d96c49c7cde"
             },
             "require": {
                 "drupal/core": "~8.5"
@@ -12490,8 +12495,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha2+0-dev",
-                    "datestamp": "1554731581",
+                    "version": "8.x-1.0-alpha2+2-dev",
+                    "datestamp": "1568894884",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -14748,8 +14753,8 @@
             "authors": [
                 {
                     "name": "Arne Blankerts",
-                    "role": "Developer",
-                    "email": "arne@blankerts.de"
+                    "email": "arne@blankerts.de",
+                    "role": "Developer"
                 }
             ],
             "description": "A small library for converting tokenized PHP source code into XML and potentially other formats",
@@ -14781,7 +14786,6 @@
         "openeuropa/oe_webtools_location": 20,
         "semiceu/adms-ap_validator": 20,
         "behat/mink-selenium2-driver": 20,
-        "drupal/config_inspector": 10,
         "drupal/drupal-extension": 10,
         "drupal/filecache": 20,
         "drupal/stage_file_proxy": 20,
