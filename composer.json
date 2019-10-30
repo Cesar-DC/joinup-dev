@@ -28,7 +28,7 @@
         "drupal/facets": "1.3.0",
         "drupal/field_group": "~1.0-rc6",
         "drupal/file_url": "~1.0",
-        "drupal/flag": "^4.0@alpha",
+        "drupal/flag": "4.0.0-beta1",
         "drupal/geocoder": "3.x-dev",
         "drupal/geofield": "1.2.0",
         "drupal/honeypot": "^1.27",
