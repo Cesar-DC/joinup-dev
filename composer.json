@@ -10,7 +10,7 @@
         "continuousphp/aws-sdk-phing": "~0.1",
         "cweagans/composer-patches": "^1.6.4",
         "drupal-composer/drupal-scaffold": "^2.2",
-        "drupal/allowed_formats": "^1.1",
+        "drupal/allowed_formats": "1.2.0",
         "drupal/cached_computed_field": "^1.0-beta3",
         "drupal/changed_fields": "^2.0",
         "drupal/config_devel": "1.3.0",
