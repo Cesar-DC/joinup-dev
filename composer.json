@@ -59,7 +59,7 @@
         "drupal/social_media_links": "^2.5",
         "drupal/sparql_entity_storage": "1.0.0-alpha1",
         "drupal/state_machine": "1.0-beta3",
-        "drupal/subpathauto": "^1.0@rc",
+        "drupal/subpathauto": "1.0.0",
         "drupal/swiftmailer": "^1.0@beta",
         "drupal/token": "~1.0",
         "drupal/video_embed_field": "~1.5",
